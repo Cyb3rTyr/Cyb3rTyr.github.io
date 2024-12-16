@@ -18,8 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  /*background: #000001;*/
-  background: "assets\img\background\bg3.jpg";
+  background: #000001;
   background-size: cover;
   left: 0;
   right: 0;
