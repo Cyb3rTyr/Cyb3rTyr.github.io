@@ -18,11 +18,9 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background-image: url('assets/img/background/bg7.jpg');
-  /**background: #000001;**/
+  background-image: url('assets\img\background\bg7.jpg');
+  background: #000001;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   left: 0;
   right: 0;
   top: 0;
@@ -114,22 +112,12 @@ h6 {
   justify-content: center;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
-  /* Transparent white background */
   color: #fff;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-}
-
-/* Updated to include background image */
-#header .social-links a {
-  background-image: url('path/to/your/image.jpg');
-  /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 #header .social-links a:hover {
