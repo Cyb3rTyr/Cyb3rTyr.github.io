@@ -996,6 +996,27 @@ section .container {
   color: #12d640;
 }
 
+/** new code for a better locking **/
+
+.contact .info-box .social-links a:hover {
+  color: #12d640;
+}
+
+/* Add hover effect for .info-box to change color to green */
+.contact .info-box:hover {
+  background: #0f3e1b;
+  color: green;
+}
+
+.contact .info-box:hover i.bx {
+  color: green;
+}
+
+.contact .info-box:hover img {
+  background: rgba(0, 128, 0, 0.1);
+}
+
+/** end of the code for a better locking **/
 .contact .php-email-form {
   padding: 30px;
   background: #09203a;
