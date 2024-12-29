@@ -18,8 +18,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background-image: url('assets\img\background\bg.jpg');
-  background: #000001;
+  background: #010e1b;
   background-size: cover;
   left: 0;
   right: 0;
@@ -38,8 +37,20 @@ a {
 }
 
 a:hover {
-  color: #12d640;
+  color: #35e888;
   text-decoration: none;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+  -drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 h1,
@@ -49,6 +60,21 @@ h4,
 h5,
 h6 {
   font-family: "Raleway", sans-serif;
+}
+
+.background-image {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: contrast(150%);
+}
+
+svg {
+  fill: currentColor;
 }
 
 /*--------------------------------------------------------------
@@ -121,7 +147,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #1c7d32;
+  background: #12d640;
 }
 
 @media (max-width: 992px) {
@@ -255,7 +281,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active>a,
 .mobile-nav li:hover>a {
-  color: #1c7d32;
+  color: #12d640;
   text-decoration: none;
 }
 
@@ -292,7 +318,7 @@ h6 {
   left: 0;
   top: 0;
   right: 0;
-  background: #000001;
+  background: #09203a;
 }
 
 #header.header-top .social-links,
@@ -679,7 +705,7 @@ section .container {
   background: #09203a;
   padding: 40px 40px;
   transition: all ease-in-out 0.3s;
-  margin: 10px
+  margin: 10px;
 }
 
 .services .icon-box .icon {
@@ -732,7 +758,7 @@ section .container {
 
 .services .icon-box:hover {
   background: #042e5f;
-  border-color: #1c7d32;
+  border-color: #12d640;
 }
 
 .services .icon-box:hover .icon {
@@ -740,7 +766,7 @@ section .container {
 }
 
 .services .icon-box:hover .icon i {
-  color: #1c7d32;
+  color: #12d640;
 }
 
 .services .icon-box:hover .icon::before {
@@ -785,7 +811,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #1c7d32;
+  background: #12d640;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -921,11 +947,20 @@ section .container {
 }
 
 .contact .info-box i.bx {
-  font-size: 24px;
-  color: #dee2e6;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  float: left;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact .info-box img {
   border-radius: 50%;
   padding: 14px;
   float: left;
+  width: 84%;
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -954,7 +989,6 @@ section .container {
   display: inline-block;
   color: #fff;
   line-height: 1;
-  margin-right: 12px;
   transition: 0.3s;
 }
 
@@ -964,7 +998,7 @@ section .container {
 
 .contact .php-email-form {
   padding: 30px;
-  background: rgba(255, 255, 255, 0.08);
+  background: #09203a;
 }
 
 .contact .php-email-form .validate {
@@ -987,7 +1021,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #1c7d32;
+  background: #12d640;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1007,7 +1041,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #1c7d32;
+  border: 3px solid #12d640;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1068,7 +1102,7 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1c7d32;
+  background: #12d640;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1077,7 +1111,7 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #15bb62;
+  background: #12d640;
 }
 
 @-webkit-keyframes animate-loading {
