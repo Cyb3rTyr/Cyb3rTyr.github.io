@@ -113,13 +113,18 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(248, 6, 6, 0.1);
+  background: url('assets\img\background\bg.jpg');
+  /* Replace with your image path */
   color: #fff;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  background-size: cover;
+  /* Ensures the image covers the entire element */
+  background-position: center;
+  /* Centers the image */
 }
 
 #header .social-links a:hover {
